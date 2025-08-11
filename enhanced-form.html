@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form & Content Page</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Multi-Section Web Page</h1>
+        <p>Showcasing Lists, Tables, Media, and a Complete HTML5 Form</p>
+        <hr>
+    </header>
+
+    <!-- ===== Section 1: Lists ===== -->
+    <section>
+        <h2>1. Favorite Programming Languages</h2>
+        <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>HTML &amp; CSS</li>
+            <li>Java</li>
+        </ul>
+
+        <h3>Steps to Learn a New Language (Ordered List)</h3>
+        <ol>
+            <li>Understand the basics</li>
+            <li>Practice small projects</li>
+            <li>Explore advanced concepts</li>
+            <li>Build a portfolio</li>
+        </ol>
+    </section>
+
+    <!-- ===== Section 2: Table ===== -->
+    <section>
+        <h2>2. Weekly Study Schedule</h2>
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML &amp; CSS</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>JavaScript</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Python</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Database</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Project Work</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ===== Section 3: Media ===== -->
+    <section>
+        <h2>3. Media Section</h2>
+        <h3>Sample Audio</h3>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Sample Video</h3>
+        <video controls width="320">
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+
+        <h3>Sample Image</h3>
+        <img src="sample-image.jpg" alt="Sample Description" width="320">
+    </section>
+
+    <!-- ===== Section 4: HTML5 Form ===== -->
+    <section>
+        <h2>4. Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" 
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <small>Format: 123-456-7890</small>
+                <br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required minlength="5" maxlength="15">
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8"
+                       placeholder="At least 8 characters">
+                <br><br>
+
+                <label for="confirmpassword">Confirm Password:</label>
+                <input type="password" id="confirmpassword" name="confirmpassword" required minlength="8">
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                </select>
+                <br><br>
+
+                <p>Subscribe to newsletter:</p>
+                <input type="radio" id="yes" name="subscribe" value="yes" required>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="subscribe" value="no">
+                <label for="no">No</label>
+                <br><br>
+
+                <label for="bio">Short Bio:</label><br>
+                <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself"></textarea>
+            </fieldset>
+
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 My Web Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
